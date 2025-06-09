@@ -1,47 +1,95 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19673097&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+MongoDB Fundamentals Assignment
+This project covers the fundamentals of MongoDB, including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing. It was completed as part of the Week 1 assignment for the PLP MERN Stack Development course.
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+Assignment Overview
+The assignment focuses on:
 
-## Assignment Overview
+Setting up a MongoDB database locally or on MongoDB Atlas
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+Performing basic CRUD operations (Create, Read, Update, Delete)
 
-## Getting Started
+Writing advanced queries with filtering, projection, and sorting
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+Creating aggregation pipelines for data analysis
 
-## Files Included
+Implementing indexing for performance optimization
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+Project Setup
+Prerequisites
+Node.js (version 18 or higher recommended)
 
-## Requirements
+MongoDB (locally installed or MongoDB Atlas account)
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+MongoDB Shell (mongosh) or MongoDB Compass (optional but recommended)
 
-## Submission
+Installation & Running
+Clone the repository:
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+bash
+Copy
+Edit
+git clone https://github.com/PLP-MERN-Stack-Development/week-1-mongodb-fundamentals-assignment-Patty05307.git
+cd week-1-mongodb-fundamentals-assignment-Patty05307
+Install Node.js dependencies:
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+bash
+Copy
+Edit
+npm install
+Run the data insertion script to populate the database:
 
-## Resources
+bash
+Copy
+Edit
+node insert_books.js
+This script will connect to your local MongoDB instance and insert sample book data into the plp_bookstore database.
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+Run your queries script to perform CRUD and aggregation operations:
+
+bash
+Copy
+Edit
+node queries.js
+This file contains example queries demonstrating basic CRUD operations, advanced filtering, aggregation pipelines, and indexing.
+
+Files in This Repository
+insert_books.js — Script to insert sample book data into MongoDB
+
+queries.js — Sample MongoDB queries for CRUD operations, advanced queries, aggregations, and indexing
+
+Week1-Assignment.md — Assignment instructions and tasks
+
+README.md — Project overview, setup instructions, and notes
+
+Sample MongoDB Queries Included
+Find all books
+
+Find books by specific authors
+
+Filter books by genre, price, or stock status
+
+Update and delete documents
+
+Aggregation pipelines to group and count books by genre
+
+Creating indexes to optimize queries
+
+Notes
+Ensure your MongoDB server is running before executing scripts.
+
+Modify the MongoDB connection URI in insert_books.js and queries.js if using a remote Atlas cluster.
+
+Use MongoDB Compass or mongosh to inspect and query your database interactively.
+
+## MongoDB Screenshot
+
+![MongoDB Screenshot](./mongodb_screenshot.png)
+
+
+References
+MongoDB Official Documentation
+
+MongoDB University Courses
+
+Node.js MongoDB Driver
+
